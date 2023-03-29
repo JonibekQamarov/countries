@@ -1,0 +1,58 @@
+/* HEADER */
+.site-header {
+  background-color: var(--element-bg);
+  padding: 24px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* LOGO */
+.logo__link {
+  color: var(--text-color);
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 800;
+  white-space: nowrap;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+/* MODE */
+.mode__btn {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+.mode__btn-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.mode__btn-icon {
+  color: var(--text-color);
+}

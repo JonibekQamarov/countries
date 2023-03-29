@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="images/"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container site-header__container">
+        <div class="logo site-header__logo">
+          <a class="logo__link" href="index.html"> Where in the world? </a>
+        </div>
+        <div class="mode">
+          <button class="mode__btn" data-mode-toggler>
+            <span class="mode__btn-inner">
+              <span class="mode__btn-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.5532 13.815C9.66857 13.815 6.51929 10.9278 6.51929 7.36821C6.51929 6.0253 6.96679 4.78158 7.73143 3.75C4.69036 4.69515 2.5 7.33122 2.5 10.4381C2.5 14.3385 5.94929 17.5 10.2036 17.5C13.5929 17.5 16.4696 15.4932 17.5 12.7045C16.375 13.4048 15.0161 13.815 13.5532 13.815Z"
+                    fill="white"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                  />
+                </svg>
+              </span>
+              <span class="mode__btn-text">Dark Mode</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content main-content--country">
+      <div class="container">
+        <!-- BACK BUTTON -->
+        <div class="back-button">
+          <a class="back-button__link" href="index.html">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="call-made">
+                <path
+                  id="Shape"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.46447 4.10744L7.64298 5.28596L3.75389 9.17504L18.6031 9.17504L18.6031 10.825L3.75389 10.825L7.64298 14.714L6.46447 15.8926L0.57191 10L6.46447 4.10744Z"
+                  fill="currentColor"
+                />
+              </g>
+            </svg>
+            <span>Back</span>
+          </a>
+        </div>
+        <!-- COUNTRY INFO -->
+        <section class="country-info" data-country-info></section>
+        <!-- /COUNTRY INFO -->
+      </div>
+    </main>
+    <!-- /MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__inner">
+          <a class="site-footer__link" href="/"> Home </a>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- TEMPLATE -->
+    <template data-country-info-template>
+      <div class="country-info__inner">
+        <div class="country-info__image">
+          <img
+            class="country-info__img"
+            width="560"
+            height="400"
+            data-country-info-img
+          />
+        </div>
+        <div class="country-info__content">
+          <h2 class="country-info__title" data-country-info-title>Germany</h2>
+          <ul class="country-info__list">
+            <li class="country-info__item">
+              <p class="name">
+                Native name:
+                <span data-country-info-native-name>België</span>
+              </p>
+              <p class="population">
+                Population:
+                <span data-country-info-population-text>11,319,511</span>
+              </p>
+              <p class="region">
+                Region:
+                <span data-country-info-region-text>Europe</span>
+              </p>
+              <p class="subregion">
+                Sub Region:
+                <span data-country-info-subregion-text>Western Europe</span>
+              </p>
+              <p class="capital">
+                Capital:
+                <span data-country-info-capital-text>Brussels</span>
+              </p>
+            </li>
+            <li class="country-info__item">
+              <p class="domain">
+                Top Level Domain:
+                <span data-country-info-domain>.be</span>
+              </p>
+              <p class="currencies">
+                Currencies:
+                <span data-country-info-currencies-text></span>
+              </p>
+              <p class="languages">
+                Languages:
+                <span data-country-info-languages-text></span>
+              </p>
+            </li>
+          </ul>
+          <p class="country-info__border-countries">
+            Border Countries:
+            <span
+              class="country-info__border-countries-link-wrapper"
+              data-border-countries
+            >
+              
+            </span>
+          </p>
+        </div>
+      </div>
+    </template>
+    <!-- /TEMPLATE -->
+
+    <!-- LOADER -->
+    <div class="loader hidden" data-loader>
+      <img class="loader__img" src="images/spinner.svg" alt="spinner" />
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+    <script src="js/country.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
